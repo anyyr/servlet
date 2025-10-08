@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Generar Clave</title>
+    <style>
+        body {
+            font-family: "Times New Roman", serif;
+            background-color: #3b5998; /* azul marino medio claro */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .form-container {
+            background-color: #ffffff;
+            padding: 30px 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            width: 400px;
+        }
+
+        h2 {
+            margin-bottom: 25px;
+            color: #2c3e50;
+        }
+
+        input[type="text"],
+        input[type="date"] {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-family: "Times New Roman", serif;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            background-color: #2a4270; /* azul más fuerte */
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            font-family: "Times New Roman", serif;
+            margin-top: 15px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #1e2e4f;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Generar Clave</h2>
+        <form method="post" action="/generarClave">
+            <input type="text" name="nombre" placeholder="Nombre" required><br>
+            <input type="text" name="apellido" placeholder="Apellido" required><br>
+            <input type="date" name="fecha" required><br>
+            <input type="submit" value="Generar Clave">
+        </form>
+    </div>
+</body>
+</html>
